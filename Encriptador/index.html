@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="roboto-mono-uniquifier">
+    <!----- Header ----->
+  <header class="header">
+    <div class="nav__header">
+      <div class="nav__logo">
+        <div class="nav__logo-img">
+          <img src="img/logo.svg" alt="Logo Alura" class="nav__logo-img-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!----- Encriptador ----->
+    <div class="encriptador__completo entrada">
+      <textarea class="encriptador__escritura" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="restriccion">
+        <img src="img/admiracion.svg" alt="Signo de admiracion" class="img-admiracion">
+        <p class="texto-admiracion">Solo minúsculas, acentos no permitidos</p>
+      </div>
+      <div class="encriptador__container">
+        <button type="submit" class="btn__encriptar">Encriptar</button>
+        <button type="submit" class="btn__desencriptar">Desencriptar</button>
+      </div>
+      <!----- Footer ----->
+      <footer>
+        <p class="copyright">&copy; 2024 Illyana Martínez</p>
+      </footer>
+    </div>
+
+    <!----- Resultado ----->
+    <section class="tarjeta resultado">
+      <div class="tarjeta__container">
+        <img src="img/persona.svg" alt="Imagen de persona" class="img-lupa">
+        <h2 class="texto__mensaje-nulo">Ningún mensaje fue encontrado</h2>
+        <h3 class="texto__mensaje-ingreso">Ingrese en la primera caja el texto que deseas encriptar o desencriptar.</h3>
+      </div>
+      <textarea type= "mensaje" class="encriptador__resultado" readonly></textarea>
+      <button type="submit" class="btn__copiar">Copiar texto</button>
+    </section>
+  </main>
+
+  <script src="encriptador.js"></script>
+</body>
+</html>
